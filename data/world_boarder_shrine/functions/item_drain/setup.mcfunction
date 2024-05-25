@@ -1,0 +1,1 @@
+scoreboard objectives add wbs.item_drain dummy
