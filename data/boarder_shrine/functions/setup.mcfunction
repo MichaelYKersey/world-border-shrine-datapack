@@ -1,1 +1,0 @@
-function boarder_shrine:util/setup
