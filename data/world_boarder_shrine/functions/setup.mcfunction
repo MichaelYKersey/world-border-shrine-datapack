@@ -5,3 +5,4 @@ function world_boarder_shrine:util/setup
 function world_boarder_shrine:item_drain/setup
 function world_boarder_shrine:voting/setup
 function world_boarder_shrine:primary/setup
+function world_boarder_shrine:menu/setup
