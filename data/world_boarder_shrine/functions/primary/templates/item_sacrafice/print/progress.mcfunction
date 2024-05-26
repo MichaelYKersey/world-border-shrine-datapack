@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s ["",{"text":"Items Left:","bold":true},{"translate":""},"\n","•",{"score":{"name":"0","objective":"wbs.item_drain"}}," stone","\n","•",{"score":{"name":"1","objective":"wbs.item_drain"}}," dirt","\n","•",{"score":{"name":"2","objective":"wbs.item_drain"}}," iron blocks"]

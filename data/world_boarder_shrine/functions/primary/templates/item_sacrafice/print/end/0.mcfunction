@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s "thanks for testing my feeding system"
