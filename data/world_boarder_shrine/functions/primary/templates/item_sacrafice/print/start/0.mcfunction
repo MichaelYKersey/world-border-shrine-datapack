@@ -5,5 +5,7 @@ scoreboard players set printing wbs.vars 1
 
 execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s "please give me items to test my feeding system"
 
+execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run funciton world_boarder_shrine:primary/templates/item_sacrafice/print/details
+
 #put below command in last funciton in the sequence, it un reserves the system printing
 scoreboard players set printing wbs.vars 0
