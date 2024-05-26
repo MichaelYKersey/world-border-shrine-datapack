@@ -1,1 +1,0 @@
-say tick 3
