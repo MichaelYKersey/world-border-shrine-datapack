@@ -1,0 +1,1 @@
+$function world_boarder_shrine:primary/$(index)/print/start/0

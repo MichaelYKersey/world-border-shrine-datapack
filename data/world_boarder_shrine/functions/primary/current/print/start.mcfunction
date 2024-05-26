@@ -1,0 +1,2 @@
+execute store result storage minecraft:world_boarder_shrine param.index int 1 run scoreboard players get current wbs.primary
+function world_boarder_shrine:primary/index/print/start with storage minecraft:world_boarder_shrine param
