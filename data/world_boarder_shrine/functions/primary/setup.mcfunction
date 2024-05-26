@@ -1,3 +1,2 @@
-scoreboard objectives add wbs.primary dummy
-scoreboard players set current wbs.primary 0
-scoreboard players set last_queued wbs.primary 0
+scoreboard players set primary_current wbs.vars 0
+scoreboard players set primary_last_queued wbs.vars 0
