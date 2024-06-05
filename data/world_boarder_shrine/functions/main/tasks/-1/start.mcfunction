@@ -4,4 +4,4 @@
 function world_boarder_shrine:main/templates/skeleton/tick
 
 #call start print sequence
-function world_boarder_shrine:main/-1/print/start/0
+function world_boarder_shrine:main/tasks/-1/print/start/0
