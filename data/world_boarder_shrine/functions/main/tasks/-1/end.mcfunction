@@ -1,4 +1,5 @@
 #cleanup 
+schedule clear world_boarder_shrine:main/tasks/-1/tick
 
 #advance
 function world_boarder_shrine:main/queue_remove

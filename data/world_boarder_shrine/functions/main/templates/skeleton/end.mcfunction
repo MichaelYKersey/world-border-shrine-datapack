@@ -1,3 +1,5 @@
+#end ticking
+schedule clear world_boarder_shrine:main/templates/skeleton/tick
 #cleanup 
 
 #advance

@@ -1,3 +1,6 @@
+#end ticking
+schedule clear world_boarder_shrine:main/templates/item_sacrafice/tick
+
 #cleanup all things that trigger completion
 scoreboard players reset 0 wbs.item_drain
 scoreboard players reset 1 wbs.item_drain
