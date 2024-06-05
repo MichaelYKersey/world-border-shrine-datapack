@@ -2,9 +2,9 @@
 schedule clear world_boarder_shrine:main/templates/item_sacrafice/tick
 
 #cleanup all things that trigger completion
-scoreboard players reset 0 wbs.item_drain
-scoreboard players reset 1 wbs.item_drain
-scoreboard players reset 2 wbs.item_drain
+scoreboard players reset main.-1.stone wbs.item_drain
+scoreboard players reset main.-1.dirt wbs.item_drain
+scoreboard players reset main.-1.iron_block wbs.item_drain
 
 #advance
 function world_boarder_shrine:main/queue_remove
