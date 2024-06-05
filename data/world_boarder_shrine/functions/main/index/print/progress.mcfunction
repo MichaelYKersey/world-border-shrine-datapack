@@ -1,1 +1,1 @@
-$function world_boarder_shrine:main/$(index)/print/progress
+$function world_boarder_shrine:main/tasks/$(index)/print/progress

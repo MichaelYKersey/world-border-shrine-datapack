@@ -1,1 +1,1 @@
-$function world_boarder_shrine:main/$(index)/start
+$function world_boarder_shrine:main/tasks/$(index)/start

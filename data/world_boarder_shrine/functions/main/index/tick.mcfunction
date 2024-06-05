@@ -1,1 +1,1 @@
-$function world_boarder_shrine:main/$(index)/tick
+$function world_boarder_shrine:main/tasks/$(index)/tick
