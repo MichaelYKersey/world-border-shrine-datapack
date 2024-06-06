@@ -7,7 +7,12 @@
                 "details":"\"wait for admin to launch\"",
                 "progress":"\"waiting for admin to launch\"",
                 "start":[{"tellraw":"\"THIS SHOULD NOT BE PRINTED\""}],
-                "end":[{"tellraw":"\"starting up\""}]
+                "end":[
+                    {"tellraw":"\"starting up...\"", "delay":"3s"},
+                    {"tellraw":"\"hello, you all might be wondering how you got here. The world has been filled with a toxic petrifying gas.\"", "delay":"3s"},
+                    {"tellraw":"\"I am Command Block Ai tasked with keeping you alive and clearing the fog\"", "delay":"3s"},
+                    {"tellraw":"\"I have released some chemicals to depetrify you and clear out the fog. But those won't last forever so we better get moving to get a permanent fog clearing station\""}
+                ]
             }
         },
         {
@@ -16,7 +21,7 @@
             "prints":{
                 "details":"\"get a crafting table and get close to the shrine\"",
                 "progress":"\"get a crafting table and get close to the shrine\"",
-                "start":[{"tellraw":"\"Lets start on the basics of wilderness survival. We need a better crafting station.\""}],
+                "start":[{"tellraw":"\"Lets start on the basics. We need a crafting station.\""}],
                 "end":[{"tellraw":"\"Ok, maybe you all won't die.\""}]
             },
             "advancements":["minecraft:story/root"]
@@ -24,11 +29,11 @@
         {
             "id":2,
             "title":"Fuel Up",
-            "prints_tellraw":{
+            "prints":{
                 "start":[{"tellraw":"\"I'm running low on reserve power. Could you bring me some fuel.\""}],
                 "end":[{"tellraw":"\"Oh, thank goodness, I was at 80%.\""}]
             },
-            "item_sacrifices":[
+            "item_sacrifice":[
                 {
                     "id":"charcoal",
                     "accepts":["minecraft:charcoal"],
@@ -49,11 +54,11 @@
         {
             "id":3,
             "title":"Green Fist",
-            "prints_tellraw":{
+            "prints":{
                 "start":[{"tellraw":"\"I'm going to need samples of the surrounding area to run some tests.\""}],
                 "end":[{"tellraw":"\"Thank you, I will try to see how these plants survived the petrifications.\""}]
             },
-            "item_sacrifices":[
+            "item_sacrifice":[
                 {
                     "id":"grass",
                     "accepts":["minecraft:short_grass","minecraft:tall_grass"],
@@ -101,11 +106,11 @@
         {
             "id":4,
             "title":"IRONing Out Issues",
-            "prints_tellraw":{
+            "prints":{
                 "start":[{"tellraw":"\"I need higher grade materials to upgrade my processing speed.\""}],
                 "end":[{"tellraw":"\"Thanks, this will help IRON out some issues.\""}]
             },
-            "item_sacrifices":[
+            "item_sacrifice":[
                 {
                     "id":"diamond",
                     "accepts":["minecraft:diamond"],
