@@ -1,4 +1,4 @@
-execute if score @s wbs.menu = @s wbs.menu run function world_boarder_shrine:menu/main
-execute if score @s wbs.main_archive.start = @s wbs.main_archive.start run function world_boarder_shrine:menu/archive/main_start
-execute if score @s wbs.main_archive.detail = @s wbs.main_archive.detail run function world_boarder_shrine:menu/archive/main_detail
-execute if score @s wbs.main_archive.end = @s wbs.main_archive.end run function world_boarder_shrine:menu/archive/main_end
+execute unless score @s wbs.menu matches 0 run function world_boarder_shrine:menu/main
+execute unless score @s wbs.main_archive.start matches -1 run function world_boarder_shrine:menu/archive/main_start
+execute unless score @s wbs.main_archive.detail matches -1 run function world_boarder_shrine:menu/archive/main_detail
+execute unless score @s wbs.main_archive.end matches -1 run function world_boarder_shrine:menu/archive/main_end

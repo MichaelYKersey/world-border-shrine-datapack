@@ -5,8 +5,10 @@ scoreboard players operation temp0 wbs.reg = @s wbs.menu
 scoreboard players set @s wbs.menu 0
 
 #eject on invalid
-execute if score temp0 wbs.reg matches ..-1 run return run tellraw @s "valid inputs range from 1-12"
+execute if score temp0 wbs.reg matches ..-2 run return run tellraw @s "valid inputs range from 1-12"
 execute if score temp0 wbs.reg matches 13.. run return run tellraw @s "valid inputs range from 1-12"
+#refreash triggers
+execute if score temp0 wbs.reg matches -1 run return run function world_boarder_shrine:menu/init_player
 #Print menu
 execute if score temp0 wbs.reg matches 1 run return run function world_boarder_shrine:menu/main/print_menu
 #Current main Progress
@@ -19,15 +21,15 @@ execute if score temp0 wbs.reg matches 4 run return run function world_boarder_s
 execute if score temp0 wbs.reg matches 5 run return run function world_boarder_shrine:menu/main/print_previous_end
 #Queue Preview
 execute if score temp0 wbs.reg matches 6 run return run function world_boarder_shrine:menu/main/print_queue
+#Vote menu
+execute if score temp0 wbs.reg matches 7 run return run function world_boarder_shrine:menu/main/print_vote_info
 #Vote Tally
-execute if score temp0 wbs.reg matches 7 run return run function world_boarder_shrine:menu/main/tally_vote
+execute if score temp0 wbs.reg matches 8 run return run function world_boarder_shrine:menu/main/tally_vote
 #Vote Yes
-execute if score temp0 wbs.reg matches 8 run return run function world_boarder_shrine:menu/main/vote_yes
+execute if score temp0 wbs.reg matches 9 run return run function world_boarder_shrine:menu/main/vote_yes
 #Vote No
-execute if score temp0 wbs.reg matches 9 run return run function world_boarder_shrine:menu/main/vote_no
+execute if score temp0 wbs.reg matches 10 run return run function world_boarder_shrine:menu/main/vote_no
 #Retract Vote
-execute if score temp0 wbs.reg matches 10 run return run function world_boarder_shrine:menu/main/vote_null
-#Current Self Vote
-execute if score temp0 wbs.reg matches 11 run return run function world_boarder_shrine:menu/main/print_vote
+execute if score temp0 wbs.reg matches 11 run return run function world_boarder_shrine:menu/main/vote_null
 # main Archive Info
 execute if score temp0 wbs.reg matches 12 run return run function world_boarder_shrine:menu/main/print_main_archive_menu
