@@ -8,7 +8,7 @@
                 "progress":"\"waiting for admin to launch\"",
                 "start":[{"tellraw":"\"THIS SHOULD NOT BE PRINTED\""}],
                 "end":[{"tellraw":"\"starting up\""}]
-            },
+            }
         },
         {
             "id":1,
