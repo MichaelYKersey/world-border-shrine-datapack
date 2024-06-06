@@ -1,0 +1,1 @@
+$function world_boarder_shrine:main/tasks/$(index)/print/voting_prompt

@@ -5,8 +5,8 @@ scoreboard players operation temp0 wbs.reg = @s wbs.menu
 scoreboard players set @s wbs.menu 0
 
 #eject on invalid
-execute if score temp0 wbs.reg matches ..-2 run return run tellraw @s "valid inputs range from 1-12"
-execute if score temp0 wbs.reg matches 13.. run return run tellraw @s "valid inputs range from 1-12"
+execute if score temp0 wbs.reg matches ..-2 run return run tellraw @s "invalid input"
+execute if score temp0 wbs.reg matches 13.. run return run tellraw @s "invalid input"
 #refreash triggers
 execute if score temp0 wbs.reg matches -1 run return run function world_boarder_shrine:menu/init_player
 #Print menu
