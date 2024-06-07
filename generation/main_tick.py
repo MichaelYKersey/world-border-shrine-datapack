@@ -16,11 +16,15 @@ def gen(task_data):
         idf.close()
     
     #check
-    f.write("#run again on failed conditions\n")
+    f.write("\n#run again on failed conditions\n")
     
+    #voting
     if ("voting" in task_data):
         f.write("execute unless score ~status wbs.votes matches 1 run return 1\n")
-    
+        vpf = open("data/world_boarder_shrine/functions/main/tasks/"+str(task_data["id"])+"/print/voting_prompt.mcfunction", "w")
+        vpf.write("tellraw @s "+task_data["voting"]["prompt"])
+        vpf.close()
+        
     #item sacrifice
     if ("item_sacrifice" in task_data):
         for channel in task_data["item_sacrifice"]:

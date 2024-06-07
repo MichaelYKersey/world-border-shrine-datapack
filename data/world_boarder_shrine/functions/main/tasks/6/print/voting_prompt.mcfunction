@@ -1,0 +1,1 @@
+tellraw @s "Are you satisfied with the building encapsulating the shrine? It must contain all blocks within a 10 block radius of the shrine."

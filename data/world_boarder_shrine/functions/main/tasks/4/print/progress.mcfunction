@@ -1,3 +1,4 @@
+tellraw @s {"text":"IRONing Out Issues[4] Progress:", "bold":true}
 #an explicit task list for completion
 tellraw @s "The fallowing items remain to be sacrificed:"
 execute if score main.4.diamond wbs.item_drain matches 1.. run tellraw @s ["\u2022",{"score":{"name":"main.4.diamond","objective":"wbs.item_drain"}},"-diamond"]

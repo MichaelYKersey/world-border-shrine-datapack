@@ -1,3 +1,4 @@
+tellraw @s {"text":"Green Fist[3] Progress:", "bold":true}
 #an explicit task list for completion
 tellraw @s "The fallowing items remain to be sacrificed:"
 execute if score main.3.grass wbs.item_drain matches 1.. run tellraw @s ["\u2022",{"score":{"name":"main.3.grass","objective":"wbs.item_drain"}},"-grass"]
