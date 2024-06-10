@@ -1,0 +1,1 @@
+scoreboard objectives add wbs.side.status dummy
