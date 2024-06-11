@@ -1,0 +1,1 @@
+tellraw @s Is there a building with a map of the current explorable world? And are you satisfied with it?

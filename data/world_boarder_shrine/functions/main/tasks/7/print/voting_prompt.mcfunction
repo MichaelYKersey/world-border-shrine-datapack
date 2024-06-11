@@ -1,0 +1,1 @@
+tellraw @s Are you satisfied with the gathering place?
