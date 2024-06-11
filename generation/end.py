@@ -1,7 +1,13 @@
 import item_sacrifice
 
 def gen(category, task_data):
-    f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/end.mcfunction", "w")
+    if "custom" in task_data and task_data["custom"]:
+        try:
+            f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/end.mcfunction", "x")
+        except:
+            return None
+    else:
+        f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/end.mcfunction", "w")
     
     f.write("#end ticking\nschedule clear world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/tick\n")
     
@@ -13,6 +19,8 @@ def gen(category, task_data):
     
     if category=="main":
         f.write("\n#advance\nfunction world_boarder_shrine:main/queue_remove\n")
+    if category=="side":
+        f.write("function world_boarder_shrine:side/list/manager/add_complete {item:"+task_data["id"]+"}")
     
     f.write("function world_boarder_shrine:util/world_boarder_refresh\n")
     f.close()

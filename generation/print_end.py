@@ -2,7 +2,14 @@ import util
 
 def gen(category, task_data):
     util.mkdir("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/end")
-    f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/end/0.mcfunction", "w")
+    if "custom" in task_data and task_data["custom"]:
+        try:
+            f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/end/0.mcfunction", "w")
+        except:
+            return None
+    else:
+        f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/end/0.mcfunction", "w")
+    
     
     f.write("#wait for system to stop printing\nexecute unless score printing wbs.vars matches 0 run return run schedule function world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/end/0 1t replace\n")
     f.write("#reserve system printing\nscoreboard players set printing wbs.vars 1\n")
