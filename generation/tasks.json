@@ -6,12 +6,12 @@
             "prints":{
                 "details":"wait for admin to launch",
                 "progress":"waiting for admin to launch",
-                "start":[{"tellraw":"THIS SHOULD NOT BE PRINTED"}],
+                "start":[{"text":"THIS SHOULD NOT BE PRINTED"}],
                 "end":[
-                    {"tellraw":"starting up...", "delay":"3s"},
-                    {"tellraw":"hello, you all might be wondering how you got here. The world has been filled with a toxic petrifying gas.", "delay":"3s"},
-                    {"tellraw":"I am Command Block Ai tasked with keeping you alive and clearing the fog", "delay":"3s"},
-                    {"tellraw":"I have released some chemicals to depetrify you and clear out the fog. But those won't last forever so we better get moving to get a permanent fog clearing station"}
+                    {"text":"starting up...", "delay":"3s"},
+                    {"text":"hello, you all might be wondering how you got here. The world has been filled with a toxic petrifying gas.", "delay":"3s"},
+                    {"text":"I am Command Block Ai tasked with keeping you alive and clearing the fog", "delay":"3s"},
+                    {"text":"I have released some chemicals to depetrify you and clear out the fog. But those won't last forever so we better get moving to get a permanent fog clearing station"}
                 ]
             }
         },
@@ -21,8 +21,8 @@
             "prints":{
                 "details":"get a crafting table and get close to the shrine",
                 "progress":"get a crafting table and get close to the shrine",
-                "start":[{"tellraw":"Lets start on the basics. We need a crafting station."}],
-                "end":[{"tellraw":"Ok, maybe you all won't die."}]
+                "start":[{"text":"Lets start on the basics. We need a crafting station."}],
+                "end":[{"text":"Ok, maybe you all won't die."}]
             },
             "advancements":["minecraft:story/root"]
         },
@@ -30,8 +30,8 @@
             "id":2,
             "title":"Fuel Up",
             "prints":{
-                "start":[{"tellraw":"I'm running low on reserve power. Could you bring me some fuel."}],
-                "end":[{"tellraw":"Oh, thank goodness, I was at 80%."}]
+                "start":[{"text":"I'm running low on reserve power. Could you bring me some fuel."}],
+                "end":[{"text":"Oh, thank goodness, I was at 80%."}]
             },
             "item_sacrifice":[
                 {
@@ -55,8 +55,8 @@
             "id":3,
             "title":"Green Fist",
             "prints":{
-                "start":[{"tellraw":"I'm going to need samples of the surrounding area to run some tests."}],
-                "end":[{"tellraw":"Thank you, I will try to see how these plants survived the petrifications."}]
+                "start":[{"text":"I'm going to need samples of the surrounding area to run some tests."}],
+                "end":[{"text":"Thank you, I will try to see how these plants survived the petrifications."}]
             },
             "item_sacrifice":[
                 {
@@ -107,8 +107,8 @@
             "id":4,
             "title":"IRONing Out Issues",
             "prints":{
-                "start":[{"tellraw":"I need higher grade materials to upgrade my processing speed."}],
-                "end":[{"tellraw":"Thanks, this will help IRON out some issues."}]
+                "start":[{"text":"I need higher grade materials to upgrade my processing speed."}],
+                "end":[{"text":"Thanks, this will help IRON out some issues."}]
             },
             "item_sacrifice":[
                 {
@@ -144,8 +144,8 @@
             "prints":{
                 "details":"Building a Housing unit for the computer. make housing contain all blocks within 10 blocks of the shrine(including vertical). must look nice.",
                 "progress":"waiting for a passing vote tally",
-                "start":[{"tellraw":"Make me some shelter from storms. I think I've waited long enough."}],
-                "end":[{"tellraw":"Any longer in the rain and we would need some rice."}]
+                "start":[{"text":"Make me some shelter from storms. I think I've waited long enough."}],
+                "end":[{"text":"Any longer in the rain and we would need some rice."}]
             },
             "voting":{"prompt":"Are you satisfied with the building encapsulating the shrine? It must contain all blocks within a 10 block radius of the shrine."}
         },
@@ -155,8 +155,8 @@
             "prints":{
                 "details":"Build a weather station (modern, futuristic, historical, or fantasy; doesn't matter). Also have a building (can be same building) that \\\"combats\\\" the fog (chemical release station, comicly large fan or air purifiyer, etc.).",
                 "progress":"waiting for a passing vote tally",
-                "start":[{"tellraw":"Build a station to monitor local weather. This info is necessary for continued revival of the world. It also must \\\"combat\\\" the fog somehow. The starting chemicals will only last so long."}],
-                "end":[{"tellraw":"Ok, this area should be secure from the fog but to expand our working area is going to take time and data."}]
+                "start":[{"text":"Build a station to monitor local weather. This info is necessary for continued revival of the world. It also must \\\"combat\\\" the fog somehow. The starting chemicals will only last so long."}],
+                "end":[{"text":"Ok, this area should be secure from the fog but to expand our working area is going to take time and data."}]
             },
             "voting":{"prompt":"Are you satisfied with the weather station? It must have a way to \\\"combat\\\" the fog. This will house the weather shrine."}
         },
@@ -166,8 +166,8 @@
             "prints":{
                 "details":"Build a gathering place (town hall, tavern, etc.)",
                 "progress":"waiting for a passing vote tally",
-                "start":[{"tellraw":"To gain a better sense of community, I ask you all to build a center to commune with each other."}],
-                "end":[{"tellraw":"How nice, now go socially bond or whatever your humans do."}]
+                "start":[{"text":"To gain a better sense of community, I ask you all to build a center to commune with each other."}],
+                "end":[{"text":"How nice, now go socially bond or whatever your humans do."}]
             },
             "voting":{"prompt":"Are you satisfied with the gathering place?"}
         },
@@ -178,10 +178,10 @@
                 "details":"build a drone station. This will be the location for you to switch to spectator mode and back.",
                 "progress":"waiting for a passing vote tally",
                 "start":[
-                    {"tellraw":"Drones were used to gather your petrified bodies. But, now bodies are becoming scarce and a lower return on investment.","delay":"3s"}, 
-                    {"tellraw":"Some drones will be call in soon for us to maintenance. We could also allocate some for your own use. Only issue is that we need a place to remotely operate them and maintain them."}
+                    {"text":"Drones were used to gather your petrified bodies. But, now bodies are becoming scarce and a lower return on investment.","delay":"3s"}, 
+                    {"text":"Some drones will be call in soon for us to maintenance. We could also allocate some for your own use. Only issue is that we need a place to remotely operate them and maintain them."}
                 ],
-                "end":[{"tellraw":"Great, the drones should be operational soon"}]
+                "end":[{"text":"Great, the drones should be operational soon"}]
             },
             "voting":{"prompt":"Are you satisfied with the gather place?"}
         },
@@ -192,10 +192,10 @@
                 "details":"make an enchanting table, and enchant an item. Then get close to the shrine.",
                 "progress":"waiting for someone with the enchanter advancement to get close to the shrine.",
                 "start":[
-                    {"tellraw":"I have been sensing some weird side effects from the fog. There are lots of green glowing orbs that seem to be absorbing into you.", "delay":"3s"},
-                    {"tellraw":"I'm not sure if it is harmful to you or not but I think we can extract it for study using lapiz."}
+                    {"text":"I have been sensing some weird side effects from the fog. There are lots of green glowing orbs that seem to be absorbing into you.", "delay":"3s"},
+                    {"text":"I'm not sure if it is harmful to you or not but I think we can extract it for study using lapiz."}
                 ],
-                "end":[{"tellraw":"Ok, maybe you all won't die."}]
+                "end":[{"text":"Ok, maybe you all won't die."}]
             },
             "advancements":["minecraft:story/enchant_item"]
         },
@@ -204,11 +204,11 @@
             "title":"Darkened Portal",
             "prints":{
                 "start":[
-                    {"tellraw":"A while ago the drones collected some samples from a ruin to the NORTH. I have concluded these blocks don't match the other geological samples.","delay":"3s"},
-                    {"tellraw":"It might be a shot in the dark, but I think the same condensation of orbs may let certain minerals make special rifts.","delay":"3s"},
-                    {"tellraw":"I believe you will figure out what is happening and bring back some samples."}
+                    {"text":"A while ago the drones collected some samples from a ruin to the NORTH. I have concluded these blocks don't match the other geological samples.","delay":"3s"},
+                    {"text":"It might be a shot in the dark, but I think the same condensation of orbs may let certain minerals make special rifts.","delay":"3s"},
+                    {"text":"I believe you will figure out what is happening and bring back some samples."}
                 ],
-                "end":[{"tellraw":"Interesting, a stable portal! The magic of this place is so intriguing. I'll process these data samples asap.","delay":"10s"}]
+                "end":[{"text":"Interesting, a stable portal! The magic of this place is so intriguing. I'll process these data samples asap.","delay":"10s"}]
             },
             "item_sacrifice":[
                 {
@@ -232,8 +232,8 @@
             "id":11,
             "title":"Hell of an Upgrade",
             "prints":{
-                "start":[{"tellraw":"According to the samples, there are small chunks of highly heat resistant metal within the ground's composition. If we could get a larger chunk it could greatly increase our technology efficiency."}],
-                "end":[{"tellraw":"These samples are great! We should be able to give our fog clearing machine the ability to manipulate weather given more data."}]
+                "start":[{"text":"According to the samples, there are small chunks of highly heat resistant metal within the ground's composition. If we could get a larger chunk it could greatly increase our technology efficiency."}],
+                "end":[{"text":"These samples are great! We should be able to give our fog clearing machine the ability to manipulate weather given more data."}]
             },
             "item_sacrifice":[
                 {
@@ -249,8 +249,8 @@
             "prints":{
                 "details":"Map the explorable world and an accompanying build (default size maps) all maps must be 1:1.",
                 "progress":"waiting for a passing vote tally.",
-                "start":[{"tellraw":"Let us take inspiration from the late Google, and make some maps! that will get enough data for weather manipulation."}],
-                "end":[{"tellraw":"The weather manipulation system should be up and operational in a bit. Given the right resources it should temporarily change the weather."}]
+                "start":[{"text":"Let us take inspiration from the late Google, and make some maps! that will get enough data for weather manipulation."}],
+                "end":[{"text":"The weather manipulation system should be up and operational in a bit. Given the right resources it should temporarily change the weather."}]
             },
             "voting":{"prompt":"Is there a building with a map of the current explorable world? And are you satisfied with it?"}
         }
