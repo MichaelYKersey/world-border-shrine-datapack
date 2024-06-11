@@ -1,6 +1,5 @@
 #run in datapack directory (parent of current)
 import json
-import os
 import main_start
 import main_tick
 import main_end
