@@ -9,7 +9,7 @@ def mkdir(path):
             os.mkdir(path)
         path += "/" 
 
-def mkfile(path):
+def open_f(path,open_op):
     folders = path.split('/')
     path = ""
     while (len(folders) > 1):
@@ -17,5 +17,5 @@ def mkfile(path):
         if (not os.path.exists(path)):
             os.mkdir(path)
         path += "/" 
-    f = open(path+folders[0],"w")
-    f.close()
+    f = open(path+folders[0],open_op)
+    return f

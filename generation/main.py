@@ -13,8 +13,6 @@ f = open("generation/tasks.json")
 data = json.load(f)
 
 for task_data in data["main"]:
-    util.mkdir("data/world_boarder_shrine/functions/main/tasks/"+str(task_data["id"]))
-    util.mkdir("data/world_boarder_shrine/functions/main/tasks/"+str(task_data["id"])+"/print")
     #processing
     start.gen("main", task_data)
     tick.gen("main", task_data)

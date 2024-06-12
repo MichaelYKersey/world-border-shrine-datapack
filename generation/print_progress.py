@@ -1,13 +1,14 @@
+import util
 import item_sacrifice
 
 def gen(category, task_data):
     if "custom" in task_data and task_data["custom"]:
         try:
-            f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/progress.mcfunction", "x")
+            f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/progress.mcfunction", "x")
         except:
             return None
     else:
-        f = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/progress.mcfunction", "w")
+        f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/progress.mcfunction", "w")
     
     
     f.write("tellraw @s {\"text\":\""+task_data["title"]+"["+str(task_data["id"])+"] Progress:\", \"bold\":true}\n")

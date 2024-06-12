@@ -10,7 +10,7 @@ def tick_check(category, task_data):
 
 def extra(category, task_data):
     for i in task_data["advancements"]:
-        util.mkfile("data/world_boarder_shrine/predicates/advancements/"+i.replace(':','/',1)+".json")
+        util.open_f("data/world_boarder_shrine/predicates/advancements/"+i.replace(':','/',1)+".json")
         af = open("data/world_boarder_shrine/predicates/advancements/"+i.replace(':','/',1)+".json", "w")
         af.write("{\n  \"condition\": \"minecraft:entity_properties\",\n  \"entity\": \"this\",\n  \"predicate\": {\n    \"type_specific\": {\n      \"type\": \"minecraft:player\",\n      \"advancements\": {\n        \"")
         af.write(i+"\": true\n      }\n    }\n  }\n}")

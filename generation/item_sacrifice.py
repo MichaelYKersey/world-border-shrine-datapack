@@ -1,3 +1,5 @@
+import util
+
 def start(category, task_data):
     fstr = "#setup for item sacrifices\n"
     for i in task_data["item_sacrifice"]:
@@ -14,7 +16,7 @@ def tick_check(category, task_data):
     return fstr
 
 def extra(category, task_data):
-    idf = open("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/item_drain.mcfunction", "w")
+    idf = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/item_drain.mcfunction", "w")
     for channel in task_data["item_sacrifice"]:
         for item in channel["accepts"]:
             idf.write("execute as @s[nbt={Item:{id:\""+item+"\"}}] run function world_boarder_shrine:item_drain/feed {channel:\""+category+"."+str(task_data["id"])+"."+channel["id"]+"\"}\n") 
