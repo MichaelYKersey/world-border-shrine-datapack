@@ -22,6 +22,7 @@ def gen(category, task_data):
         f.write("\n#advance\nfunction world_boarder_shrine:main/queue_remove\n")
     if category=="side":
         f.write("function world_boarder_shrine:side/list/manager/add_complete {item:"+str(task_data["id"])+"}\n")
+        f.write("scoreboard players add side_expansion_total wbs.vars "+str(2*task_data["expansion"])+"\n")
     
     f.write("function world_boarder_shrine:util/world_boarder_refresh\n")
     f.close()

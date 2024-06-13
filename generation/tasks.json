@@ -259,6 +259,7 @@
         {
             "id":0,
             "title":"Not with your hands",
+            "expansion":16,
             "start_active":true,
             "prints":{
                 "start":[{"text":"It seems that what you see in the water and what you can fish out if it are different, bring me samples of what you can pull out of nearby water with a fishing rod"}],
@@ -300,6 +301,7 @@
         {
             "id":1,
             "title":"First blood",
+            "expansion":8,
             "start_active":true,
             "hidden":true,
             "custom":true,
@@ -312,6 +314,7 @@
         {
             "id":2,
             "title":"Rightful Revenge",
+            "expansion":8,
             "start_active":true,
             "hidden":true,
             "custom":true,
