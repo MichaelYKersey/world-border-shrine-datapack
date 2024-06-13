@@ -7,10 +7,13 @@ import print_start
 import print_end
 import print_details
 import print_progress
+import main_archive_menu
 import util
 
 f = open("generation/tasks.json")
 data = json.load(f)
+
+main_archive_menu.gen(data)
 
 for task_data in data["main"]:
     #processing
