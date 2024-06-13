@@ -255,8 +255,70 @@
             "voting":{"prompt":"Is there a building with a map of the current explorable world? And are you satisfied with it?"}
         }
     ],
-    "side":{
-        
-    }
-
+    "side":[
+        {
+            "id":0,
+            "title":"Not with your hands",
+            "start_active":true,
+            "prints":{
+                "start":[{"text":"It seems that what you see in the water and what you can fish out if it are different, bring me samples of what you can pull out of nearby water with a fishing rod"}],
+                "end":[{"text":"strange there is such diversity of fish and objects distributed uniformly through the surrounding waters. I'll analysis the samples you brought."}]
+            },
+            "item_sacrifice":[
+                {
+                    "id":"treasure",
+                    "accepts":["minecraft:saddle","minecraft:name_tag","minecraft:nautilus_shell"],
+                    "quantity":1
+                },
+                {
+                    "id":"cod",
+                    "accepts":["minecraft:cod","minecraft:cooked_cod"],
+                    "quantity":1
+                },
+                {
+                    "id":"salmon",
+                    "accepts":["minecraft:cooked_salmon","minecraft:salmon"],
+                    "quantity":1
+                },
+                {
+                    "id":"pufferfish",
+                    "accepts":["minecraft:pufferfish"],
+                    "quantity":1
+                },
+                {
+                    "id":"tropical_fish",
+                    "accepts":["minecraft:tropical_fish"],
+                    "quantity":1
+                },
+                {
+                    "id":"lily_pad",
+                    "accepts":["minecraft:lily_pad"],
+                    "quantity":1
+                }
+            ]
+        },
+        {
+            "id":1,
+            "title":"First blood",
+            "status_default":"hidden",
+            "custom":true,
+            "prints":{
+                "details":"One player kills another player",
+                "start":[{"text":"N/A (there was no starting message)"}],
+                "end":[{"text":"N/A (there was no ending message)"}]
+            }
+        },
+        {
+            "id":2,
+            "title":"Rightful Revenge",
+            "start_active":true,
+            "hidden":true,
+            "custom":true,
+            "prints":{
+                "details":"One player kills another player",
+                "start":[{"text":"N/A (there was no starting message)"}],
+                "end":[{"text":"N/A (there was no ending message)"}]
+            }
+        }
+    ]
 }
