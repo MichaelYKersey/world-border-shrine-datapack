@@ -300,7 +300,8 @@
         {
             "id":1,
             "title":"First blood",
-            "status_default":"hidden",
+            "start_active":true,
+            "hidden":true,
             "custom":true,
             "prints":{
                 "details":"One player kills another player",

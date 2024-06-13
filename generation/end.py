@@ -16,12 +16,12 @@ def gen(category, task_data):
     if ("item_sacrifice" in task_data):
         f.write(item_sacrifice.end(category,task_data))
     
-    f.write("\n#call end sequence\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/end/0")
+    f.write("\n#call end sequence\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/end/0\n")
     
     if category=="main":
         f.write("\n#advance\nfunction world_boarder_shrine:main/queue_remove\n")
     if category=="side":
-        f.write("function world_boarder_shrine:side/list/manager/add_complete {item:"+task_data["id"]+"}")
+        f.write("function world_boarder_shrine:side/list/manager/add_complete {item:"+str(task_data["id"])+"}\n")
     
     f.write("function world_boarder_shrine:util/world_boarder_refresh\n")
     f.close()

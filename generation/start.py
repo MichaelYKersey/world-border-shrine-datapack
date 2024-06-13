@@ -17,6 +17,12 @@ def gen(category, task_data):
     
     if ("voting" in task_data):
         f.write(voting.start(category,task_data))
+    
+    if (category=="side"):
+        if "hidden" in task_data and task_data["hidden"]:
+            f.write("function function world_boarder_shrine:side/list/manager/add_hidden with {item:"+str(task_data["id"])+"}\n")
+        else:
+            f.write("function function world_boarder_shrine:side/list/manager/add_public with {item:"+str(task_data["id"])+"}\n")
         
     f.write("\n#call the tick\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/tick\n")
     f.write("\n#call start print sequence\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/start/0\n")
