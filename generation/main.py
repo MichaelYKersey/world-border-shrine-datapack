@@ -9,6 +9,7 @@ import print_details
 import print_progress
 import main_archive_menu
 import patch_update
+import side_list_print
 import util
 
 f = open("generation/tasks.json")
@@ -16,6 +17,7 @@ data = json.load(f)
 
 main_archive_menu.gen(data)
 patch_update.gen(data)
+side_list_print.gen(data)
 
 for task_data in data["main"]:
     #processing

@@ -1,0 +1,1 @@
+tellraw @s '[2]Rightful Revenge"
