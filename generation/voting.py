@@ -7,5 +7,5 @@ def tick_check(category, task_data):
 
 def extra(category, task_data):
     vpf = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/voting_prompt.mcfunction", "w")
-    vpf.write("tellraw @s "+task_data["voting"]["prompt"])
+    vpf.write("tellraw @s {\"text\":\""+task_data["voting"]["prompt"]+"\",\"color\":\"#00cc44\"}")
     vpf.close()

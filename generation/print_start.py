@@ -14,8 +14,8 @@ def gen(category, task_data):
     
     fi = 0  
     for i in task_data["prints"]["start"]:
-        f.write("execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s ")
-        f.write(i["text"]+"\n")
+        f.write("execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s {\"text\":\"")
+        f.write(i["text"]+"\",\"color\":\"#9933ff\"}\n")
         if "delay" in i:
             fi = fi+1
             f.write("schedule function world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/start/"+str(fi)+" "+i["delay"]+" replace")
