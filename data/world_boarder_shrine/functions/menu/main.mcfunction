@@ -6,7 +6,7 @@ scoreboard players set @s wbs.menu 0
 
 #eject on invalid
 execute if score temp0 wbs.reg matches ..-2 run return run tellraw @s "invalid input"
-execute if score temp0 wbs.reg matches 13.. run return run tellraw @s "invalid input"
+execute if score temp0 wbs.reg matches 15.. run return run tellraw @s "invalid input"
 #refreash triggers
 execute if score temp0 wbs.reg matches -1 run return run function world_boarder_shrine:menu/init_player
 #Print menu
@@ -33,3 +33,6 @@ execute if score temp0 wbs.reg matches 10 run return run function world_boarder_
 execute if score temp0 wbs.reg matches 11 run return run function world_boarder_shrine:menu/main/vote_null
 # main Archive Info
 execute if score temp0 wbs.reg matches 12 run return run function world_boarder_shrine:menu/main/print_main_archive_menu
+# side Archive Info
+execute if score temp0 wbs.reg matches 13 run return run function world_boarder_shrine:menu/main/print_side_public_active_menu
+execute if score temp0 wbs.reg matches 14 run return run function world_boarder_shrine:menu/main/print_side_complete_archive_menu
