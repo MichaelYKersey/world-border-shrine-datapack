@@ -13,4 +13,5 @@ scoreboard players reset side.0.lily_pad wbs.item_drain
 #call end sequence
 function world_boarder_shrine:side/tasks/0/print/end/0
 function world_boarder_shrine:side/list/manager/add_complete {item:0}
+scoreboard players add side_expansion_total wbs.vars 32
 function world_boarder_shrine:util/world_boarder_refresh

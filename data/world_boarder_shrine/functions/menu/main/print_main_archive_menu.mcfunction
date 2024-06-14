@@ -25,4 +25,4 @@ tellraw @s "[10] Darkened Portal"
 execute if score main_last_queued wbs.vars matches ..10 run return 1
 tellraw @s "[11] Hell of an Upgrade"
 execute if score main_last_queued wbs.vars matches ..11 run return 1
-tellraw @s "[12] "
+tellraw @s "[12] Google maps for real"
