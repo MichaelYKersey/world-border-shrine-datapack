@@ -1,1 +1,1 @@
-tellraw @s '[0]Not with your hands"
+tellraw @s {"text":"[0]Not with your hands","color":"#00cc44"}

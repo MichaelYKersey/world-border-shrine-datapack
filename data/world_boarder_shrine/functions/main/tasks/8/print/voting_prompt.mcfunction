@@ -1,1 +1,1 @@
-tellraw @s Are you satisfied with the gather place?
+tellraw @s {"text":"Are you satisfied with the gather place?","color":"#00cc44"}

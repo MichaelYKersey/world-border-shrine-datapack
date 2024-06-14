@@ -1,1 +1,1 @@
-tellraw @s Are you satisfied with the weather station? It must have a way to \"combat\" the fog. This will house the weather shrine.
+tellraw @s {"text":"Are you satisfied with the weather station? It must have a way to \"combat\" the fog. This will house the weather shrine.","color":"#00cc44"}

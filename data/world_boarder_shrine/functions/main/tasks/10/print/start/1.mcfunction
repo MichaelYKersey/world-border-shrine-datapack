@@ -1,2 +1,2 @@
-execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s It might be a shot in the dark, but I think the same condensation of orbs may let certain minerals make special rifts.
+execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @a[distance=..10] run tellraw @s {"text":"It might be a shot in the dark, but I think the same condensation of orbs may let certain minerals make special rifts.","color":"#9933ff"}
 schedule function world_boarder_shrine:main/tasks/10/print/start/2 3s replace

@@ -1,1 +1,1 @@
-tellraw @s '[1]First blood"
+tellraw @s {"text":"[1]First blood","color":"#00cc44"}

@@ -1,5 +1,5 @@
 tellraw @s {"text":"Main Archive Info:", "bold":true,"color":"#00cc44"}
-tellraw @s {"text":"it access the archive run \"/trigger wbs.main_archive.[section] set [id]\". If a section is not available run the refresh trigger option in the main menu and try again. Ids for each main task are listed below","color":"#00cc44"}
+tellraw @s {"text":"to access the archive run \"/trigger wbs.main_archive.[section] set [id]\". If a section is not available run the refresh trigger option in the main menu and try again. Ids for each main task are listed below","color":"#00cc44"}
 execute if score main_last_queued wbs.vars matches ..-1 run return 1
 tellraw @s {"text":"[0] Wake Up","color":"#00cc44"}
 execute if score main_last_queued wbs.vars matches ..0 run return 1

@@ -1,3 +1,3 @@
-tellraw @s {"text":"Wake Up[0] Progress:", "bold":true}
+tellraw @s {"text":"Wake Up[0] Progress:", "bold":true,"color":"#00cc44"}
 #an explicit task list for completion
-tellraw @s waiting for admin to launch
+tellraw @s {"text":"waiting for admin to launch","color":"#00cc44"}

@@ -1,1 +1,1 @@
-tellraw @s '[2]Rightful Revenge"
+tellraw @s {"text":"[2]Rightful Revenge","color":"#00cc44"}
