@@ -16,3 +16,7 @@ scoreboard players enable @s wbs.side_archive.progress
 scoreboard players set @s wbs.side_archive.progress -1
 scoreboard players enable @s wbs.side_archive.end
 scoreboard players set @s wbs.side_archive.end -1
+
+execute unless entity @s[tag=shrine_admin] run return 1
+scoreboard players enable @s wbs.admin.end_side
+scoreboard players set @s wbs.admin.end_side -1

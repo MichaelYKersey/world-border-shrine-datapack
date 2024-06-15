@@ -9,4 +9,9 @@ tellraw @s {"text":"\u2022vote info/menu","clickEvent":{"action":"run_command","
 tellraw @s {"text":"\u2022main tasks archive","clickEvent":{"action":"run_command","value":"/trigger wbs.menu set 12"},"color":"#00cc44"}
 tellraw @s {"text":"\u2022public active side tasks archive","clickEvent":{"action":"run_command","value":"/trigger wbs.menu set 13"},"color":"#00cc44"}
 tellraw @s {"text":"\u2022complete side tasks archive","clickEvent":{"action":"run_command","value":"/trigger wbs.menu set 14"},"color":"#00cc44"}
+
 tellraw @s {"text":"\u2022debug:refesh triggers","clickEvent":{"action":"run_command","value":"/trigger wbs.menu set -1"},"color":"#00cc44"}
+
+execute unless entity @s[tag=shrine_admin] run return 1
+
+execute if entity @s[tag=shrine_admin] run tellraw @s {"text":"\u2022admin:hidden side tasks archive","clickEvent":{"action":"run_command","value":"/trigger wbs.menu set -2"},"color":"#00cc44"}

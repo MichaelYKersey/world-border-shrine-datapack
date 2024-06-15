@@ -8,3 +8,5 @@ execute unless score @s wbs.side_archive.start matches -1 run function world_boa
 execute unless score @s wbs.side_archive.details matches -1 run function world_boarder_shrine:menu/archive/side_details
 execute unless score @s wbs.side_archive.progress matches -1 run function world_boarder_shrine:menu/archive/side_progress
 execute unless score @s wbs.side_archive.end matches -1 run function world_boarder_shrine:menu/archive/side_end
+
+execute unless score @s wbs.admin.end_side matches -1 run function world_boarder_shrine:menu/admin/end_side
