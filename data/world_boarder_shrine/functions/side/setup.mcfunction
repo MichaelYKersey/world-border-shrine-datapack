@@ -1,0 +1,1 @@
+function world_boarder_shrine:side/list/setup
