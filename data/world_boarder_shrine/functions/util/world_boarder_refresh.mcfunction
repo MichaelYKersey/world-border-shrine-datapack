@@ -2,6 +2,7 @@ scoreboard players set temp0 wbs.reg 32
 scoreboard players operation temp0 wbs.reg *= main_current wbs.vars
 scoreboard players add temp0 wbs.reg 16
 execute if score temp0 wbs.reg matches ..47 run scoreboard players set temp0 wbs.reg 48
+scoreboard players operation temp0 wbs.reg += side_expansion_total wbs.vars
 execute store result score temp1 wbs.reg run worldborder get
 execute if score temp0 wbs.reg < temp1 wbs.reg run return run tellraw @a {"text":"MESSAGE ADMIN: A world boarder size tracking error occurred","color":"red"}
 execute if score temp0 wbs.reg > temp1 wbs.reg run function world_boarder_shrine:util/fog_recession
