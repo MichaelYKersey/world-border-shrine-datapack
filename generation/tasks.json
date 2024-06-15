@@ -6,7 +6,7 @@
             "prints":{
                 "details":"wait for admin to launch",
                 "progress":"waiting for admin to launch",
-                "start":[{"text":"THIS SHOULD NOT BE PRINTED"}],
+                "start":[{"text":"N/A (there was no starting message)"}],
                 "end":[
                     {"text":"starting up...", "delay":"3s"},
                     {"text":"hello, you all might be wondering how you got here. The world has been filled with a toxic petrifying gas.", "delay":"3s"},
@@ -46,6 +46,7 @@
                 },
                 {
                     "id":"blast_furnace",
+                    "display_name":"blast furnace",
                     "accepts":["minecraft:blast_furnace"],
                     "quantity":1
                 }
@@ -61,11 +62,13 @@
             "item_sacrifice":[
                 {
                     "id":"grass",
+                    "display_name":"grass (not a grass block)",
                     "accepts":["minecraft:short_grass","minecraft:tall_grass"],
                     "quantity":16
                 },
                 {
                     "id":"leaf_blocks",
+                    "display_name":"leaf blocks",
                     "accepts":[
                         "minecraft:oak_leaves",
                         "minecraft:spruce_leaves",
@@ -118,11 +121,13 @@
                 },
                 {
                     "id":"gold_ingot",
+                    "display_name":"gold ingot",
                     "accepts":["minecraft:gold_ingot"],
                     "quantity":16
                 },
                 {
                     "id":"iron_ingot",
+                    "display_name":"iron ingot",
                     "accepts":["minecraft:iron_ingot"],
                     "quantity":32
                 },
@@ -133,6 +138,7 @@
                 },
                 {
                     "id":"copper_ingot",
+                    "display_name":"copper ingot",
                     "accepts":["minecraft:copper_ingot"],
                     "quantity":64
                 }
@@ -183,7 +189,7 @@
                 ],
                 "end":[{"text":"Great, the drones should be operational soon"}]
             },
-            "voting":{"prompt":"Are you satisfied with the gather place?"}
+            "voting":{"prompt":"Are you satisfied with the Drone Station? This will be the place to switch to spectator mode and back."}
         },
         {
             "id":9,
@@ -195,7 +201,7 @@
                     {"text":"I have been sensing some weird side effects from the fog. There are lots of green glowing orbs that seem to be absorbing into you.", "delay":"3s"},
                     {"text":"I'm not sure if it is harmful to you or not but I think we can extract it for study using lapiz."}
                 ],
-                "end":[{"text":"Ok, maybe you all won't die."}]
+                "end":[{"text":"Interesting. they can be condensed objects to give them seemingly magical effects. we will need more research on this later"}]
             },
             "advancements":["minecraft:story/enchant_item"]
         },
@@ -222,7 +228,8 @@
                     "quantity":16
                 },
                 {
-                    "id":"minecraft:soul_sand",
+                    "id":"soul_sand",
+                    "display_name":"soul sand or soil",
                     "accepts":["minecraft:soul_sand","minecraft:soul_soil"],
                     "quantity":32
                 }
@@ -238,6 +245,7 @@
             "item_sacrifice":[
                 {
                     "id":"netherite_ingot",
+                    "display_name":"netherite ingot",
                     "accepts":["minecraft:netherite_ingot"],
                     "quantity":1
                 }
@@ -268,6 +276,7 @@
             "item_sacrifice":[
                 {
                     "id":"treasure",
+                    "display_name":"treasure (saddle, name tag, or nautilus shell)",
                     "accepts":["minecraft:saddle","minecraft:name_tag","minecraft:nautilus_shell"],
                     "quantity":1
                 },
@@ -288,6 +297,7 @@
                 },
                 {
                     "id":"tropical_fish",
+                    "display_name":"tropical fish",
                     "accepts":["minecraft:tropical_fish"],
                     "quantity":1
                 },

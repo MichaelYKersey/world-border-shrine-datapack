@@ -6,6 +6,6 @@ execute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @e[d
 #run again on failed conditions
 execute unless score main.10.netherrack wbs.item_drain matches 0 run return 1
 execute unless score main.10.quartz wbs.item_drain matches 0 run return 1
-execute unless score main.10.minecraft:soul_sand wbs.item_drain matches 0 run return 1
+execute unless score main.10.soul_sand wbs.item_drain matches 0 run return 1
 #once all conditions pass call end function
 function world_boarder_shrine:main/tasks/10/end

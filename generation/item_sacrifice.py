@@ -31,7 +31,10 @@ def end(category, task_data):
 def print_details(category, task_data):
     fstr = "tellraw @s {\"text\":\"The fallowing items must be sacrificed by throwing them near the shrine:"
     for i in task_data["item_sacrifice"]:
-        fstr += "\\n\\u2022"+str(i["quantity"])+"-"+i["id"]
+        if "display_name" in i:
+            fstr += "\\n\\u2022"+str(i["quantity"])+"-"+i["display_name"]
+        else:
+            fstr += "\\n\\u2022"+str(i["quantity"])+"-"+i["id"]
     fstr += "\",\"color\":\"#00cc44\"}\n"
     return fstr
 
@@ -39,5 +42,8 @@ def print_progress(category, task_data):
     fstr = "tellraw @s {\"text\":\"The fallowing items remain to be sacrificed:\",\"color\":\"#00cc44\"}\n"
     for i in task_data["item_sacrifice"]:
         channel = category+"."+str(task_data["id"])+"."+i["id"]
-        fstr += "execute if score "+channel+" wbs.item_drain matches 1.. run tellraw @s [\"\\u2022\",{\"score\":{\"name\":\""+channel+"\",\"objective\":\"wbs.item_drain\"},\"color\":\"#00cc44\"},{\"text\":\"-"+i["id"]+"\",\"color\":\"#00cc44\"}]\n"
+        if "display_name" in i:
+            fstr += "execute if score "+channel+" wbs.item_drain matches 1.. run tellraw @s [\"\\u2022\",{\"score\":{\"name\":\""+channel+"\",\"objective\":\"wbs.item_drain\"},\"color\":\"#00cc44\"},{\"text\":\"-"+i["display_name"]+"\",\"color\":\"#00cc44\"}]\n"
+        else:
+            fstr += "execute if score "+channel+" wbs.item_drain matches 1.. run tellraw @s [\"\\u2022\",{\"score\":{\"name\":\""+channel+"\",\"objective\":\"wbs.item_drain\"},\"color\":\"#00cc44\"},{\"text\":\"-"+i["id"]+"\",\"color\":\"#00cc44\"}]\n"
     return fstr

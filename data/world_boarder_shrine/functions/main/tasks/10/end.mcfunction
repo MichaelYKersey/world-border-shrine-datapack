@@ -5,7 +5,7 @@ schedule clear world_boarder_shrine:main/tasks/10/tick
 #setup for item sacrifices
 scoreboard players reset main.10.netherrack wbs.item_drain
 scoreboard players reset main.10.quartz wbs.item_drain
-scoreboard players reset main.10.minecraft:soul_sand wbs.item_drain
+scoreboard players reset main.10.soul_sand wbs.item_drain
 
 #call end sequence
 function world_boarder_shrine:main/tasks/10/print/end/0
