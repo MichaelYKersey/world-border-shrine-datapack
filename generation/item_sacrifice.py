@@ -29,7 +29,7 @@ def end(category, task_data):
     return fstr
 
 def print_details(category, task_data):
-    fstr = "tellraw @s {\"text\":\"The fallowing items must be sacrificed by throwing them near the shrine:}"
+    fstr = "tellraw @s {\"text\":\"The fallowing items must be sacrificed by throwing them near the shrine:"
     for i in task_data["item_sacrifice"]:
         fstr += "\\n\\u2022"+str(i["quantity"])+"-"+i["id"]
     fstr += "\",\"color\":\"#00cc44\"}\n"
