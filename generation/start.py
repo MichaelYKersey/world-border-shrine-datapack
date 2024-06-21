@@ -5,11 +5,11 @@ import item_sacrifice
 def gen(category, task_data):
     if "custom" in task_data and task_data["custom"]:
         try:
-            f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/start.mcfunction", "x")
+            f = util.open_f("data/world_border_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/start.mcfunction", "x")
         except:
             return None
     else:
-        f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/start.mcfunction", "w")
+        f = util.open_f("data/world_border_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/start.mcfunction", "w")
     
     f.write("#setup for task\n")
     if ("item_sacrifice" in task_data):
@@ -20,10 +20,10 @@ def gen(category, task_data):
     
     if (category=="side"):
         if "hidden" in task_data and task_data["hidden"]:
-            f.write("function world_boarder_shrine:side/list/manager/add_hidden {item:"+str(task_data["id"])+"}\n")
+            f.write("function world_border_shrine:side/list/manager/add_hidden {item:"+str(task_data["id"])+"}\n")
         else:
-            f.write("function world_boarder_shrine:side/list/manager/add_public {item:"+str(task_data["id"])+"}\n")
+            f.write("function world_border_shrine:side/list/manager/add_public {item:"+str(task_data["id"])+"}\n")
         
-    f.write("\n#call the tick\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/tick\n")
-    f.write("\n#call start print sequence\nfunction world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/start/0\n")
+    f.write("\n#call the tick\nfunction world_border_shrine:"+category+"/tasks/"+str(task_data["id"])+"/tick\n")
+    f.write("\n#call start print sequence\nfunction world_border_shrine:"+category+"/tasks/"+str(task_data["id"])+"/print/start/0\n")
     f.close()

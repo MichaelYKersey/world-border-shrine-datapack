@@ -1,2 +1,2 @@
-# world-boarder-shrine-datapack
- Idiot Union World 5 World Boarder Shrine Datapack
+# world-border-shrine-datapack
+ Idiot Union World 5 World Border Shrine Datapack

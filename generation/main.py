@@ -31,8 +31,8 @@ for task_data in data["main"]:
     print_progress.gen("main", task_data)
 
 for task_data in data["side"]:
-    util.mkdir("data/world_boarder_shrine/functions/side/tasks/"+str(task_data["id"]))
-    util.mkdir("data/world_boarder_shrine/functions/side/tasks/"+str(task_data["id"])+"/print")
+    util.mkdir("data/world_border_shrine/functions/side/tasks/"+str(task_data["id"]))
+    util.mkdir("data/world_border_shrine/functions/side/tasks/"+str(task_data["id"])+"/print")
     #processing
     start.gen("side", task_data)
     tick.gen("side", task_data)

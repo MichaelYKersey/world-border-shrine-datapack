@@ -1,1 +1,1 @@
-$function world_boarder_shrine:main/tasks/$(index)/end
+$function world_border_shrine:main/tasks/$(index)/end

@@ -1,2 +1,2 @@
-execute store result storage minecraft:world_boarder_shrine param.index int 1 run scoreboard players get main_current wbs.vars
-function world_boarder_shrine:main/index/print/voting_prompt with storage minecraft:world_boarder_shrine param
+execute store result storage minecraft:world_border_shrine param.index int 1 run scoreboard players get main_current wbs.vars
+function world_border_shrine:main/index/print/voting_prompt with storage minecraft:world_border_shrine param

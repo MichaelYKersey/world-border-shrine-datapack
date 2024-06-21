@@ -7,7 +7,7 @@ def start(category, task_data):
     return fstr
 
 def tick_update(category, task_data):
-    return "#update item channels\nexecute as @e[type=minecraft:interaction,tag=world_boarder_shrine] at @s as @e[distance=..3,type=minecraft:item] run function world_boarder_shrine:"+category+"/tasks/"+str(task_data["id"])+"/item_drain\n"
+    return "#update item channels\nexecute as @e[type=minecraft:interaction,tag=world_border_shrine] at @s as @e[distance=..3,type=minecraft:item] run function world_border_shrine:"+category+"/tasks/"+str(task_data["id"])+"/item_drain\n"
 
 def tick_check(category, task_data):
     fstr = ""
@@ -16,10 +16,10 @@ def tick_check(category, task_data):
     return fstr
 
 def extra(category, task_data):
-    idf = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/item_drain.mcfunction", "w")
+    idf = util.open_f("data/world_border_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/item_drain.mcfunction", "w")
     for channel in task_data["item_sacrifice"]:
         for item in channel["accepts"]:
-            idf.write("execute as @s[nbt={Item:{id:\""+item+"\"}}] run function world_boarder_shrine:item_drain/feed {channel:\""+category+"."+str(task_data["id"])+"."+channel["id"]+"\"}\n") 
+            idf.write("execute as @s[nbt={Item:{id:\""+item+"\"}}] run function world_border_shrine:item_drain/feed {channel:\""+category+"."+str(task_data["id"])+"."+channel["id"]+"\"}\n") 
     idf.close()
 
 def end(category, task_data):

@@ -1,1 +1,1 @@
-execute as @a at @s run function world_boarder_shrine:tick_selectors/players
+execute as @a at @s run function world_border_shrine:tick_selectors/players

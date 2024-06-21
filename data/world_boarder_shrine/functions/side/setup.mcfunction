@@ -1,1 +1,1 @@
-function world_boarder_shrine:side/list/setup
+function world_border_shrine:side/list/setup

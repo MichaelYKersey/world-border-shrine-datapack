@@ -4,11 +4,11 @@ import item_sacrifice
 def gen(category, task_data):
     if "custom" in task_data and task_data["custom"]:
         try:
-            f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/details.mcfunction", "x")
+            f = util.open_f("data/world_border_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/details.mcfunction", "x")
         except:
             return None
     else:
-        f = util.open_f("data/world_boarder_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/details.mcfunction", "w")
+        f = util.open_f("data/world_border_shrine/functions/"+category+"/tasks/"+str(task_data["id"])+"/print/details.mcfunction", "w")
     
     
     f.write("tellraw @s {\"text\":\""+task_data["title"]+"["+str(task_data["id"])+"] Details:\", \"bold\":true,\"color\":\"#00cc44\"}\n")

@@ -1,8 +1,8 @@
 #setup for task
-function world_boarder_shrine:voting/reset
+function world_border_shrine:voting/reset
 
 #call the tick
-function world_boarder_shrine:main/tasks/5/tick
+function world_border_shrine:main/tasks/5/tick
 
 #call start print sequence
-function world_boarder_shrine:main/tasks/5/print/start/0
+function world_border_shrine:main/tasks/5/print/start/0
