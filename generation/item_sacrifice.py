@@ -29,7 +29,7 @@ def end(category, task_data):
     return fstr
 
 def print_details(category, task_data):
-    fstr = "tellraw @s {\"text\":\"The fallowing items must be sacrificed by throwing them near the shrine:"
+    fstr = "tellraw @s {\"text\":\"The following items must be sacrificed by throwing them near the shrine:"
     for i in task_data["item_sacrifice"]:
         if "display_name" in i:
             fstr += "\\n\\u2022"+str(i["quantity"])+"-"+i["display_name"]
@@ -39,7 +39,7 @@ def print_details(category, task_data):
     return fstr
 
 def print_progress(category, task_data):
-    fstr = "tellraw @s {\"text\":\"The fallowing items remain to be sacrificed:\",\"color\":\"#00cc44\"}\n"
+    fstr = "tellraw @s {\"text\":\"The following items remain to be sacrificed:\",\"color\":\"#00cc44\"}\n"
     for i in task_data["item_sacrifice"]:
         channel = category+"."+str(task_data["id"])+"."+i["id"]
         if "display_name" in i:
