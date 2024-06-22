@@ -25,4 +25,6 @@ tellraw @s {"text":"[10] Darkened Portal","color":"#00cc44"}
 execute if score main_last_queued wbs.vars matches ..10 run return 1
 tellraw @s {"text":"[11] Hell of an Upgrade","color":"#00cc44"}
 execute if score main_last_queued wbs.vars matches ..11 run return 1
-tellraw @s {"text":"[12] Google maps for real","color":"#00cc44"}
+tellraw @s {"text":"[12] Google Maps For Real","color":"#00cc44"}
+execute if score main_last_queued wbs.vars matches ..12 run return 1
+tellraw @s {"text":"[13] Need Better Samples","color":"#00cc44"}

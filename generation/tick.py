@@ -35,6 +35,10 @@ def gen(category, task_data):
     #advancements
     if ("advancements" in task_data):
         f.write(advancement.tick_check(category,task_data))
+    #player nbt
+    if ("match_player_nbt" in task_data):
+        for i in task_data["match_player_nbt"]:
+            f.write("#nearby player nbt\nexecute as @e[type=minecraft:interaction,tag=world_border_shrine] at @s unless entity @a[distance=..5,nbt="+i+"] run return 1\n")
     
     f.write("#once all conditions pass call end function\nfunction world_border_shrine:"+category+"/tasks/"+str(task_data["id"])+"/end")
     f.close()

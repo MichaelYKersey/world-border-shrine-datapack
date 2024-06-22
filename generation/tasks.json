@@ -253,7 +253,7 @@
         },
         {
             "id":12,
-            "title":"Google maps for real",
+            "title":"Google Maps For Real",
             "prints":{
                 "details":"Map the explorable world and an accompanying build (default size maps) all maps must be 1:1.",
                 "progress":"waiting for a passing vote tally.",
@@ -261,6 +261,17 @@
                 "end":[{"text":"The weather manipulation system should be up and operational in a bit. Given the right resources it should temporarily change the weather."}]
             },
             "voting":{"prompt":"Is there a building with a map of the current explorable world? And are you satisfied with it?"}
+        },
+        {
+            "id":13,
+            "title":"Need Better Samples",
+            "prints":{
+                "details":"get an item with silk touch in your inventory and get near the shrine.",
+                "progress":"waiting for someone with a silk touch item to get near the shrine.",
+                "start":[{"text":"The quality of the samples has been pretty low so far. I think the enchantment magic from earlier can help with that."}],
+                "end":[{"text":"Interesting what this enchantment table can do. Great job, we are gonna need high quality samples pretty soon."}]
+            },
+            "match_player_nbt":["{Inventory:[{components:{\"minecraft:stored_enchantments\":{levels:{\"minecraft:silk_touch\":1}}}}]}"]
         }
     ],
     "side":[
