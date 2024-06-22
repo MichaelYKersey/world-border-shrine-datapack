@@ -14,6 +14,9 @@ def gen(category, task_data):
         
     f.write("#refresh ticking\nschedule function world_border_shrine:"+category+"/tasks/"+str(task_data["id"])+"/tick 1t replace\n")
 
+    if "manual" in task_data and task_data["manual"]:
+        return
+    
     #updates
     #item sacrifice
     if ("item_sacrifice" in task_data):

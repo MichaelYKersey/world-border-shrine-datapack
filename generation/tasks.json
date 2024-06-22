@@ -314,7 +314,7 @@
             "expansion":8,
             "start_active":true,
             "hidden":true,
-            "custom":true,
+            "manual":true,
             "prints":{
                 "details":"One player kills another player",
                 "start":[{"text":"N/A (there was no starting message)"}],
@@ -327,7 +327,7 @@
             "expansion":8,
             "start_active":true,
             "hidden":true,
-            "custom":true,
+            "manual":true,
             "prints":{
                 "details":"One player kills another player",
                 "start":[{"text":"N/A (there was no starting message)"}],
