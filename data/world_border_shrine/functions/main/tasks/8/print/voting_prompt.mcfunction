@@ -1,1 +1,1 @@
-tellraw @s {"text":"Are you satisfied with the gather place?","color":"#00cc44"}
+tellraw @s {"text":"Are you satisfied with the Drone Station? This will be the place to switch to spectator mode and back.","color":"#00cc44"}
